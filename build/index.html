@@ -1,182 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Berlin Preview</title>
     <link rel="stylesheet" href="css/style.css" />
     <style>
-      .image-slider {
-        position: relative;
-        overflow: hidden;
-        max-width: 100%;
-        max-height: 300px;
-        margin-left: 5%;
-        margin-right: 5%;
-      }
+        .image-slider {
+            position: relative;
+            overflow: hidden;
+            max-width: 100%;
+            max-height: 300px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
 
-      .image-slider .image-list {
-        display: flex;
-        flex-flow: row nowrap;
-      }
+        .image-slider .image-list {
+            display: flex;
+            flex-flow: row nowrap;
+        }
 
-      .image-list img {
-        height: 200px;
-        border: 1px solid black;
-      }
+        .image-list img {
+            height: 200px;
+            border: 1px solid black;
+        }
 
-      .image-slider img {
-        margin: 10px 5px 10px 5px;
-        filter: saturate(0) brightness(0.8);
-        transition-property: filter;
-        transition-duration: 0.6s;
-        transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
-      }
-      .image-slider img:hover {
-        filter: saturate(1);
-      }
+        .image-slider img {
+            margin: 10px 5px 10px 5px;
+            filter: saturate(0) brightness(0.8);
+            transition-property: filter;
+            transition-duration: 0.6s;
+            transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
+        }
+
+        .image-slider img:hover {
+            filter: saturate(1);
+        }
     </style>
-  </head>
-  <body class="body m-0 h-auto bg-stone-300 font-normal leading-7">
+</head>
+
+<body class="body m-0 h-auto bg-stone-300 font-normal leading-7">
     <div
-      class="flex min-h-screen items-center justify-center bg-[url('../../imgs/headerpic.jpg')] bg-cover bg-scroll sm:bg-fixed"
-    >
-      <div
-        class="rounded bg-teal-900 px-4 py-3 text-5xl uppercase tracking-wider text-white"
-      >
-        <span> Berlin's Graffiti </span>
-      </div>
+        class="flex min-h-screen items-center justify-center bg-[url('../../imgs/headerpic.jpg')] bg-cover bg-scroll sm:bg-fixed">
+        <div class="rounded bg-teal-900 px-4 py-3 text-5xl uppercase tracking-wider text-white">
+            <span> Berlin's Graffiti </span>
+        </div>
     </div>
+
     <section class="px-2 py-4 text-center">
-      <h2 class="text-2xl font-bold">Graffiti capital in Europe</h2>
-      <p>
-        Find the best places for street art and graffiti in Berlin with this
-        compact guide that lists the exact locations of the best Berlin murals.
-        Recognised as one of the top street art cities in the world, Berlin is a
-        true walhalla for street art enthusiasts and bloggers like myself. Have
-        a look at this Berlin street art guide and let me know what you think!
-      </p>
+        <h2 class="text-2xl font-bold">Graffiti capital in Europe</h2>
+        <p>
+            Find the best places for street art and graffiti in Berlin with this
+            compact guide that lists the exact locations of the best Berlin murals.
+            Recognised as one of the top street art cities in the world, Berlin is a
+            true walhalla for street art enthusiasts and bloggers like myself. Have
+            a look at this Berlin street art guide and let me know what you think!
+        </p>
     </section>
 
     <div
-      class="flex min-h-[400px] items-center justify-center bg-[url('../../imgs/best-places-for-street-art-berlin-24.jpg')] bg-cover bg-scroll sm:bg-fixed"
-    >
-      <div
-        class="rounded bg-teal-900 px-4 py-2 text-5xl uppercase tracking-wider text-white"
-      >
-        <span> Alice Pasquini </span>
-      </div>
+        class="flex min-h-[400px] items-center justify-center bg-[url('../../imgs/best-places-for-street-art-berlin-24.jpg')] bg-cover bg-scroll sm:bg-fixed">
+        <div class="rounded bg-teal-900 px-4 py-2 text-5xl uppercase tracking-wider text-white">
+            <span> Alice Pasquini </span>
+        </div>
     </div>
+
     <section class="bg-zinc-700 px-2 py-4 text-center text-[#ddd]">
-      <h2 class="text-2xl font-bold">Warschauer Strasse</h2>
-      <p>
-        You can find this large mural Suspended by Italian stencil artist Alice
-        Pasquini on Warschauer Strasse near the East Side Gallery. Alice is one
-        of the most respected stencil artists around so I was very excited to
-        see such a large mural by her. Covering 150m2, I read that it took her
-        seven days of non-stop painting to create this mural that contains six
-        female portraits.
-      </p>
+        <h2 class="text-2xl font-bold">Warschauer Strasse</h2>
+        <p>
+            You can find this large mural Suspended by Italian stencil artist Alice
+            Pasquini on Warschauer Strasse near the East Side Gallery. Alice is one
+            of the most respected stencil artists around so I was very excited to
+            see such a large mural by her. Covering 150m2, I read that it took her
+            seven days of non-stop painting to create this mural that contains six
+            female portraits.
+        </p>
     </section>
 
     <div class="image-slider py-7">
         <div class="image-list">
-          <img
-            src="../imgs/best-places-for-street-art-berlin-21.jpg"
-            alt="Image 1"
-          />
-          <img
-            src="../imgs/best-places-for-street-art-berlin-27.jpg"
-            alt="Image 4"
-          />
-          <img
-            src="../imgs/best-places-for-street-art-berlin-22.jpg"
-            alt="Image 2"
-          />
-          <img
-            src="../imgs/best-places-for-street-art-berlin-25.jpg"
-            alt="Image 3"
-          />
-          <img
-            src="../imgs/best-places-for-street-art-berlin-9.jpg"
-            alt="Image 5"
-          />
-          <img
-            src="../imgs/best-places-for-street-art-berlin-33.jpg"
-            alt="Image 6"
-          />
-          <img
-            src="../imgs/best-places-for-street-art-berlin-35.jpg"
-            alt="Image 7"
-          />
+            <img src="../imgs/best-places-for-street-art-berlin-21.jpg" alt="Image 1" />
+            <img src="../imgs/best-places-for-street-art-berlin-27.jpg" alt="Image 4" />
+            <img src="../imgs/best-places-for-street-art-berlin-22.jpg" alt="Image 2" />
+            <img src="../imgs/best-places-for-street-art-berlin-25.jpg" alt="Image 3" />
+            <img src="../imgs/best-places-for-street-art-berlin-9.jpg" alt="Image 5" />
+            <img src="../imgs/best-places-for-street-art-berlin-33.jpg" alt="Image 6" />
+            <img src="../imgs/best-places-for-street-art-berlin-35.jpg" alt="Image 7" />
         </div>
-      </div>
-<section class="bg-zinc-700 px-2 py-4 text-center text-[#ddd]">
-    <h2 class="text-2xl font-bold">Graffiti Mecca</h2>
-    <p>
-        Art critic Emilie Trice has called Berlin “the graffiti Mecca of the urban art world.” While few people would argue with her, the Berlin street scene is not as radical as her statement suggests. Street art in Berlin is a big industry. It’s not exactly legal, but the city’s title of UNESCO’s City of Design has kept local authorities from doing much to change what observers call the most “bombed” city in Europe. From the authorities’ point of view, the graffiti attracts tourists, and the tourists bring money to a city deep in debt.
-    </p>
-  </section>
+    </div>
+
+    <section class="bg-zinc-700 px-2 py-4 text-center text-[#ddd]">
+        <h2 class="text-2xl font-bold">Graffiti Mecca</h2>
+        <p>
+            Art critic Emilie Trice has called Berlin “the graffiti Mecca of the
+            urban art world.” While few people would argue with her, the Berlin
+            street scene is not as radical as her statement suggests. Street art in
+            Berlin is a big industry. It’s not exactly legal, but the city’s title
+            of UNESCO’s City of Design has kept local authorities from doing much to
+            change what observers call the most “bombed” city in Europe. From the
+            authorities’ point of view, the graffiti attracts tourists, and the
+            tourists bring money to a city deep in debt.
+        </p>
+    </section>
 
     <div
-      class="flex min-h-[400px] items-center justify-center bg-[url('../../imgs/best-places-for-street-art-berlin-46.jpg')] bg-cover bg-scroll sm:bg-fixed"
-    >
-      <div
-        class="rounded bg-teal-900 px-4 py-2 text-5xl uppercase tracking-wider text-white"
-      >
-        <span> Raw Gelände </span>
-      </div>
+        class="flex min-h-[400px] items-center justify-center bg-[url('../../imgs/best-places-for-street-art-berlin-46.jpg')] bg-cover bg-scroll sm:bg-fixed">
+        <div class="rounded bg-teal-900 px-4 py-2 text-5xl uppercase tracking-wider text-white">
+            <span> Raw Gelände </span>
+        </div>
     </div>
+
     <section class="bg-zinc-700 px-2 py-4 text-center text-[#ddd]">
-      <h2 class="text-2xl font-bold">Bordalo II</h2>
-      <p>
-        You won’t be able to miss this large tucan by Portuguese street artist
-        Bordalo II though. Questioning today’s materialistic society, Bordalo is
-        famous for using garbage to make his large-scale artworks. Featuring
-        artworks by some of the world’s most famous street artists, Raw Gelände
-        really should be your number one Berlin street art destination! However,
-        the activities here aren’t just limited to street art hunting and
-        drinking beer.
-      </p>
+        <h2 class="text-2xl font-bold">Bordalo II</h2>
+        <p>
+            You won’t be able to miss this large tucan by Portuguese street artist
+            Bordalo II though. Questioning today’s materialistic society, Bordalo is
+            famous for using garbage to make his large-scale artworks. Featuring
+            artworks by some of the world’s most famous street artists, Raw Gelände
+            really should be your number one Berlin street art destination! However,
+            the activities here aren’t just limited to street art hunting and
+            drinking beer.
+        </p>
     </section>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-      $(function () {
-        const $bl = $("body"),
-          $th = $(".image-list"),
-          blW = $bl.outerWidth(),
-          blSW = $bl.prop("scrollWidth"),
-          wDiff = blSW / blW - 1, // widths difference ratio
-          mPadd = 60, // Mousemove Padding
-          damp = 20; // Mousemove response softness
+        $(function () {
+            const $bl = $(".image-slider"),
+                $th = $(".image-list"),
+                blW = $bl.outerWidth(),
+                blSW = $bl.prop("scrollWidth"),
+                wDiff = blSW / blW - 1, // widths difference ratio
+                mPadd = 60, // Mousemove Padding
+                damp = 20; // Mousemove response softness
 
-        let posX = 0,
-          mX2 = 0, // Modified mouse position
-          mmAA = blW - mPadd * 2, // The mousemove available area
-          mmAAr = blW / mmAA, // get available mousemove fidderence ratio
-          itv = null;
+            let posX = 0,
+                mX2 = 0, // Modified mouse position
+                mmAA = blW - mPadd * 2, // The mousemove available area
+                mmAAr = blW / mmAA, // get available mousemove fidderence ratio
+                itv = null;
 
-        const anim = () => {
-          posX += (mX2 - posX) / damp; // zeno's paradox equation "catching delay"
-          $th.css({
-            transform: `translateX(${-posX * wDiff}px)`,
-          });
-        };
+            const anim = () => {
+                posX += (mX2 - posX) / damp; // zeno's paradox equation "catching delay"
+                $th.css({
+                    transform: `translateX(${-posX * wDiff}px)`,
+                });
+            };
 
-        $bl
-          .on("mousemove", function (e) {
-            const mouseX = e.pageX - $(this).prop("offsetLeft");
-            mX2 = Math.min(Math.max(0, mouseX - mPadd), mmAA) * mmAAr;
-          })
-          .on("mouseenter", function (e) {
-            itv = setInterval(anim, 10);
-          })
-          .on("mouseleave", function () {
-            clearInterval(itv);
-          });
-      });
+            $bl
+                .on("mousemove", function (e) {
+                    const mouseX = e.pageX - $(this).prop("offsetLeft");
+                    mX2 = Math.min(Math.max(0, mouseX - mPadd), mmAA) * mmAAr;
+                })
+                .on("mouseenter", function (e) {
+                    itv = setInterval(anim, 10);
+                })
+                .on("mouseleave", function () {
+                    clearInterval(itv);
+                });
+        });
     </script>
-  </body>
+</body>
+
 </html>
