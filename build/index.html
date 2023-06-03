@@ -38,9 +38,9 @@
       }
     </style>
   </head>
-  <body class="m-0 h-auto bg-stone-300 font-normal leading-7">
+  <body class="body m-0 h-auto bg-stone-300 font-normal leading-7">
     <div
-      class="flex min-h-screen items-center justify-center bg-[url('../../imgs/headerpic.jpg')] bg-scroll sm:bg-fixed"
+      class="flex min-h-screen items-center justify-center bg-[url('../../imgs/headerpic.jpg')] bg-cover bg-scroll sm:bg-fixed"
     >
       <div
         class="rounded bg-teal-900 px-4 py-3 text-5xl uppercase tracking-wider text-white"
@@ -144,7 +144,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(function () {
-        const $bl = $(".image-slider"),
+        const $bl = $("body"),
           $th = $(".image-list"),
           blW = $bl.outerWidth(),
           blSW = $bl.prop("scrollWidth"),
